@@ -731,6 +731,7 @@ section {
     text-align: center;
     margin-top: 5px;
     animation: changeColor 1s infinite;
+    width:15vh;
 }
 
 @keyframes changeColor {
