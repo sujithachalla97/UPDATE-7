@@ -113,8 +113,7 @@
         opacity: 0;
         border-radius: 50%;
     }
-}
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+}@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 :root {
 
@@ -273,15 +272,7 @@ body {
     color: #fff;
 }
 
-.navbar {
-    list-style-type: none;
-}
-
-.navbar a {
-    text-decoration: none;
-}
-
-.containern {
+.container {
     padding-inline: 15px;
 }
 
@@ -341,7 +332,7 @@ body {
     transition: all 0.50s ease;
 }
 
-.containern {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -392,19 +383,6 @@ body {
     display: none;
 }
 
-.img-thumbnail1 {
-    height: 90px;
-    width: 90px;
-    padding: 10px;
-}
-
-.img-thumbnail2 {
-    height: 70px;
-    width: 70px;
-    margin-left: 65px;
-    margin-right: 20px;
-}
-
 @media (max-width: 1280px) {
     .header {
         padding: 14px 2%;
@@ -419,48 +397,16 @@ body {
 @media (max-width: 1090px) {
     #menu-icon {
         display: block;
-        margin-right: 40px;
     }
 
-    /* .img-thumbnail1{
-    height:60px;
-    width:60px;
-    padding: 6px;
-}*/
     .navbar {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        position: absolute;
-        top: 6rem;
-        left: 0px;
-        width: 100%;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.5);
-
-        display: none;
-
-
-    }
-
-    .navbar li {
-        display: block;
-        text-align: center;
-        line-height: 50px;
-
-    }
-
-    /*.navbar {
         position: absolute;
         top: 100%;
         right: 2%;
         width: 270px;
         height: auto;
         background: #0F1156;
-       display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -471,7 +417,7 @@ body {
 
     .navbar li {
         margin: 10px 0;
-    }*/
+    }
 
     .navbar.active {
         max-height: 500px;
@@ -488,7 +434,3 @@ body {
 
 
 
-.section {
-    margin-top: 200px;
-    margin-left: 20px;
-}
