@@ -434,3 +434,324 @@ body {
 
 
 
+
+.events-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+
+}
+
+/*.container-aboutpage {
+    margin-top: 20px;
+}*/
+
+.event-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.28) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    width: min(900px, 100%);
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+        0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.box:hover,
+.event-box:hover {
+    transform: translateY(-10px);
+
+}
+
+.About h2,
+h3 {
+    margin-top: 50;
+    color: #395886;
+}
+
+.About hr {
+    border: 3;
+    border-top: 2px solid #333;
+    margin: 10px 0 20px;
+}
+
+.box img,
+.event-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+.event-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.event-box h3 {
+    margin: 10px 0;
+    color: #FAB30F;
+    font-size: 30px;
+
+}
+
+.event-box p {
+    margin: 0;
+    padding: 0 10px;
+
+    font-size: 24px;
+    color: white;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.box h1 {
+    color: #F5EFBD;
+}
+
+.box p,
+ul {
+    margin: 0;
+    padding: 0 1px;
+
+    font-size: large;
+
+}
+
+.box {
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;*/
+
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.28) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    width: min(900px, 100%);
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+        0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    margin: auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (min-width:1200px) {
+    .event-box {
+        width: 960px;
+        margin-left: -100px;
+        margin-right: -20px;
+
+    }
+
+    .events-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+    .box {
+        width: calc(100% - 0px);
+        /* Ensure the box fits within the screen with padding considered */
+        /* max-width: 1000px; /* Increase the max-width */
+        padding: 20px;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(30px);
+        border-radius: 20px;
+        box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+            0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+        margin: auto;
+        /* Center the box horizontally */
+        min-width: 500px;
+        /* Set a minimum width */
+
+    }
+
+    .event-box {
+        width: 800px;
+        /* Set a minimum width */
+
+        margin-top: 20px;
+    }
+
+    .About {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+footer {
+    overflow: hidden;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .box {
+        width: calc(100% - 0px);
+        /* Ensure the box fits within the screen with padding considered */
+        /* max-width: 1000px; /* Increase the max-width */
+        padding: 20px;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(30px);
+        border-radius: 20px;
+        box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+            0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+        margin: auto;
+        /* Center the box horizontally */
+        width: 600px;
+        /* Set a minimum width */
+
+    }
+
+    .event-box {
+        width: 600px;
+        /* Set a minimum width */
+
+        margin-top: 20px;
+    }
+
+    .About {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 579px) {
+    .box {
+
+        /* Ensure the box fits within the screen with padding considered */
+        /* max-width: 1000px; /* Increase the max-width */
+        padding: 20px;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(30px);
+        border-radius: 20px;
+        box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+            0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+        margin: auto;
+        /* Center the box horizontally */
+        width: 700px;
+        /* Set a minimum width */
+
+    }
+
+    .event-box {
+        min-width: 700px;
+        /* Set a minimum width */
+
+        margin-top: 20px;
+    }
+
+    .About {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+
+        /* Ensure the box fits within the screen with padding considered */
+        /* max-width: 1000px; /* Increase the max-width */
+        padding: 20px;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.28) 0%,
+                rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(30px);
+        border-radius: 20px;
+        box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+            0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+        margin: auto;
+        /* Center the box horizontally */
+        max-width: 60px;
+        /* Set a minimum width */
+
+    }
+
+    .event-box {
+        width: 300px;
+        /* Set a minimum width */
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .About {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*-----footer-------*/
+
+/* responsive for larger than 550px screen */
+@media (max-width: 550px) {
+    .footer-top .containerf {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-top .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}
