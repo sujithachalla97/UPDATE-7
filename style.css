@@ -517,7 +517,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 20vh;
-   
+   background: #323C7D;
     color: white;
     padding: 40px 20px;
     border-radius: 15px;
@@ -558,7 +558,7 @@ section {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    
+     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
