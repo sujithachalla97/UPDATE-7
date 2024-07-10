@@ -572,6 +572,7 @@ section {
 .content-about {
     flex: 1;
     padding: 40px;
+    min-height:10vh;
 }
 
 .content-about h1 {
@@ -584,6 +585,8 @@ section {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    width:320px;
+    margin-left:20px;
 }
 
 .content-about h1::after {
